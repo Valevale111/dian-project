@@ -8,10 +8,21 @@ Day1 科学上网；
 Day2 配置linuxC语言环境；
 
 ————————————————————————————————————————————————————————————————————————————
-level 0-2
+level 0
+（0-2）
 1.int getopt(int argc, char * const argv[],
                   const char *optstring)
 char *optstring = "ab:c::"
-单个字符a         表示选项a没有参数            格式：-a即可，不加参数
-单字符加冒号b:     表示选项b有且必须加参数      格式：-b 100或-b100,但-b=100错
-单字符加2冒号c::   表示选项c可以有，也可以无     格式：-c200，其它格式错误
+单个字符a         表示选项a没有参数；单字符加冒号b:     表示选项b有且必须加参数；单字符加2冒号c::   表示选项c可以有，也可以无
+
+命令行选项解析函数(C语言)：getopt()和getopt_long() - 肖邦linux - 博客园
+https://www.cnblogs.com/liwei0526vip/p/4873111.html
+www.cnblogs.com
+（0-3）
+2.linux 下的 .a(静态库) 文件 .so（动态库） 文件
+静态链接的可执行文件要比动态链接的可执行文件要大得多，因为它将需要用到的代码从二进制文件中“拷贝”了一份，而动态库仅仅是复制了一些重定位和符号表信息;
+
+浅谈静态库和动态库 - 知乎
+https://zhuanlan.zhihu.com/p/71372182
+zhuanlan.zhihu.com
+
