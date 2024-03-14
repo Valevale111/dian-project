@@ -9,7 +9,7 @@ Day2 配置linuxC语言环境；
 
 ————————————————————————————————————————————————————————————————————————————
 level 0-2
-1.int gettop(int argc, char * const argv[],
+1.int getopt(int argc, char * const argv[],
                   const char *optstring)
 char *optstring = "ab:c::"
 单个字符a         表示选项a没有参数            格式：-a即可，不加参数
