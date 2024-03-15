@@ -25,4 +25,11 @@ www.cnblogs.com
 浅谈静态库和动态库 - 知乎
 https://zhuanlan.zhihu.com/p/71372182
 zhuanlan.zhihu.com
+注：编译时链接库；也需要#include库；
+
+level 1
+（1-1）
+1.关于库函数 get_fps()"可变帧率"：
+帧率：frames per second
+
 
