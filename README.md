@@ -33,5 +33,5 @@ level 1
 帧率：frames per second
 2.decoder_init时参数加入视频地址后运行报错Segmentation fault (core dumped)
 尝试使用gdb ./~ core查看崩溃原因定位；查看log文件；
-/var/log/apport.log查看崩溃记录；
+/var/log/apport.log查看崩溃记录，查看core文件路径；
 
