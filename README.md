@@ -31,5 +31,5 @@ level 1
 （1-1）
 1.关于库函数 get_fps()"可变帧率"：
 帧率：frames per second
-
+2.decoder_init时参数加入视频地址后运行报错Segmentation fault (core dumped)
 
