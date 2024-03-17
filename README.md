@@ -36,5 +36,9 @@ level 1
 /var/log/apport.log查看崩溃记录，查看core文件报错引导；
 加入./libvideodecoder.a 后报错undefined reference to symbol 'avcodec_open2@@LIBAVCODEC_60'
 3.rgb转灰度算法：
-采用(0.2126 * red + 0.7152 * green + 0.0722 * blue)
+采用(0.2126 * red + 0.7152 * green + 0.0722 * blue)，采用灰度等级0-8，故模9；
+（1-2）resize函数
+1.在c工程中，源文件中要包含自己的头文件；
+2.由于RGB图像对应R、G、B三个通道的数据，故而不能直接池化，需要先进行卷积，再用之后得到的数据进行池化；
+
 
