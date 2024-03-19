@@ -1,11 +1,30 @@
 # My learning process
 2024Spring,Dian,Project-oriented
 
-Day1 科学上网；
-     注册github，创建git仓库并学习本地常用指令，链接本地仓库与github；
+Day 1 
+     学会科学上网...
+     注册github，创建git仓库并学习本地提交文件常用指令，链接本地仓库与github；
      安装linux虚拟机（RedHat，linux9.3），配置Linux系统；
      （被困很久的）将本机clash代理用在虚拟机的网络代理上，花费很长时间的主要原因是对linux虚拟机网络配置原理不熟悉，网上看到的各种方法细节上有所差别，最后看到几个思路相似的方法应用验证后解决了问题；
-Day2 配置linuxC语言环境；
+     补充：最后发现其实linux虚拟机并不需要clash联网，使用ssh将主机和虚拟机ip地址连接起来，就可以在主机的vscode上写代码了
+Day2-Day3 
+    开始配置linuxC语言环境；
+    在需要命令行下载c语言环境配置需要的库文件以及sudo ... 各种apt-get时报错网络问题，检查发现虚拟机浏览器可以上网，但终端无法上网；
+    尝试了很多方法都没有解决，并发现RedHat需要register系统获得权限，但是依然各种方法尝试登陆账号都没登上...
+    最终换了一个Ubuntu的.iso文件,重装虚拟机后解决问题；
+    学习命令行参数解析，编写test函数，-c打印完成；（-h文档留在最后填坑）
+Day 4
+    安装ffmpeg，下载相关库文件；
+    写初始化测试代码尝试使用video_decoder库中的decoder_init()函数，报错segmentation fault（core dumped）,搜索方法尝试解决；
+    （周五满课所以本日写代码时间较少...）
+Day 5
+    继续尝试解决segmentation fault问题：根据搜索结果学习修改ulimit -c大小，之后在运行报错产生core文件后，使用gdb查看core文件，定位报错位置；
+    学习使用gdb （filename）进行debug；
+    在复现网上的各种方法后大致确定是有关库的问题，但还是没有解决；
+    在招新群里求助，最终确认原因可能是ffmpeg版本不兼容，将videodecoder.h和.c源码重新编译后再尝试链接就可以初始化以及获得视频帧信息了；
+Day 6
+    
+    
 
 ————————————————————————————————————————————————————————————————————————————
 level 0
