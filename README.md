@@ -67,7 +67,6 @@ zhuanlan.zhihu.com
 注：编译时链接库；也需要#include库；
 3.完善命令行调用；
 ·使用getopt_long()函数，可以支持--help(例)和--h两种类型的命令行参数；
-（为什么是--h不是-h？）
 ·特殊情况，调整命令行输入修改池化参数window,step时需要获取同意选项下的两个参数，采用：
 当处理到–command的时候
 	argv[optind-1]   = 11；
